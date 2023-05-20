@@ -27,6 +27,48 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: Container(
+        margin: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        width: double.infinity,
+        height: 72,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                PhosphorIcons.house_fill,
+                color: Colors.white,
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                PhosphorIcons.shopping_cart_fill,
+                color: Colors.white.withOpacity(0.5),
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                PhosphorIcons.bookmark_simple_fill,
+                color: Colors.white.withOpacity(0.5),
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                PhosphorIcons.user_fill,
+                color: Colors.white.withOpacity(0.5),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
